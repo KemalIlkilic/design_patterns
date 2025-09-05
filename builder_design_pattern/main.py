@@ -1,6 +1,6 @@
-from builder_design_pattern.example_one.concrete.builders.small_house_builder import SmallHouseBuilder
-from builder_design_pattern.example_one.concrete.builders.big_house_builder import BigHouseBuilder
-from builder_design_pattern.example_one.concrete.director import HouseDirector
+from builder_design_pattern.concrete.builders.small_house_builder import SmallHouseBuilder
+from builder_design_pattern.concrete.builders.big_house_builder import BigHouseBuilder
+from builder_design_pattern.concrete.director import HouseDirector
 
 def main():
     small_house_builder = SmallHouseBuilder()

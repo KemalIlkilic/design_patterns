@@ -1,4 +1,4 @@
-from builder_design_pattern.example_one.abstract.house import House
+from builder_design_pattern.abstract.house import House
 
 
 class BigHouse(House):

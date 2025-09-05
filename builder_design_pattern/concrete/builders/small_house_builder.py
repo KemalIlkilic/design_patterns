@@ -1,16 +1,20 @@
-from builder_design_pattern.example_one.abstract.house_builder import HouseBuilder
-from builder_design_pattern.example_one.concrete.houses.big_house import BigHouse
+from builder_design_pattern.abstract.house_builder import HouseBuilder
+from builder_design_pattern.concrete.houses.small_house import SmallHouse
 
 
-class BigHouseBuilder(HouseBuilder):
+class SmallHouseBuilder(HouseBuilder):
     def __init__(self) -> None:
+        """
+        A fresh builder instance should contain a blank product object, which is
+        used in further assembly.
+        """
         self.reset()
-        
+
     def reset(self) -> None:
-        self._house = BigHouse()
+        self._house = SmallHouse()
 
     @property
-    def house(self) -> BigHouse:
+    def house(self) -> SmallHouse:
         """
         Various types of builders may create
         entirely different products that don't follow the same interface.
@@ -28,11 +32,11 @@ class BigHouseBuilder(HouseBuilder):
         return product
     
     def set_floors(self) -> None:
-        self._house.floors = 4
+        self._house.floors = 2
         return self
     
     def set_walls(self) -> None: 
-        self._house.walls = 10
+        self._house.walls = 5
         return self
     
     def set_house_name(self, name: str) -> None:
