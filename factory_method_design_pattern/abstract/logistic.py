@@ -1,0 +1,28 @@
+from abc import ABC, abstractmethod
+
+from factory_method_design_pattern.abstract.transport import Transport
+
+class Logistic(ABC):
+    """
+    The Creator class declares the factory method that is supposed to return an
+    object of a Product class. The Creator's subclasses usually provide the
+    implementation of this method.
+    """
+
+    #factory method
+    @abstractmethod
+    def create_transport(self) -> Transport:
+        pass
+
+    def do_delivery(self) -> str:
+        """
+        Also note that, despite its name, the Creator's primary responsibility
+        is not creating products. Usually, it contains some core business logic
+        that relies on Product objects, returned by the factory method.
+        Subclasses can indirectly change that business logic by overriding the
+        factory method and returning a different type of product from it.
+        """
+        transport = self.create_transport()
+        result = f"Creator: The creator's code has just worked --> {transport.deliver()}"
+        return result
+
