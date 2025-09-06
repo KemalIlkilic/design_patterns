@@ -1,4 +1,4 @@
-from builder_design_pattern.abstract.house import House
+from ...abstract import House
 
 
 class SmallHouse(House):

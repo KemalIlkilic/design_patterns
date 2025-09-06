@@ -1,5 +1,5 @@
-from builder_design_pattern.abstract.house import House
-from builder_design_pattern.abstract.house_builder import HouseBuilder
+from ..abstract import House
+from ..abstract import HouseBuilder
 
 
 class HouseDirector:

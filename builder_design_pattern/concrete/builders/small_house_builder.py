@@ -1,5 +1,5 @@
-from builder_design_pattern.abstract.house_builder import HouseBuilder
-from builder_design_pattern.concrete.houses.small_house import SmallHouse
+from ...abstract import HouseBuilder
+from ...concrete import SmallHouse
 
 
 class SmallHouseBuilder(HouseBuilder):
