@@ -1,4 +1,4 @@
-from factory_method_design_pattern.abstract.transport import Transport
+from ..abstract import Transport
 
 
 class Truck(Transport):

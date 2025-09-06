@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from factory_method_design_pattern.abstract.transport import Transport
+from .transport import Transport
 
 class Logistic(ABC):
     """

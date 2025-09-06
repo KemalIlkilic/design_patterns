@@ -1,7 +1,7 @@
 # Builder Design Pattern Implementation
 
-from .abstract import House, HouseBuilder
-from .concrete import SmallHouse, BigHouse, SmallHouseBuilder, BigHouseBuilder, HouseDirector
+from .abstract import HouseBuilder
+from .concrete import SmallHouseBuilder, BigHouseBuilder, HouseDirector
 
 __all__ = [
     "HouseBuilder",

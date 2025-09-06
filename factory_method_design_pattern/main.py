@@ -1,17 +1,6 @@
-from factory_method_design_pattern.abstract.logistic import Logistic
-from factory_method_design_pattern.concrete.sea_logistic import SeaLogistic
-from factory_method_design_pattern.concrete.road_logistic import RoadLogistic
-
-
-def client_code(creator: Logistic) -> None:
-    """
-    The client code works with an instance of a concrete creator, albeit through
-    its base interface. As long as the client keeps working with the creator via
-    the base interface, you can pass it any creator's subclass.
-    """
-
-    print(f"Client: I'm not aware of the creator's class, but it still works.\n"
-          f"{creator.do_delivery()}", end="")
+from .concrete import SeaLogistic
+from .concrete import RoadLogistic
+from . import client_code
 
 
 if __name__ == "__main__":
