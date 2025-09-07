@@ -1,4 +1,4 @@
-# Factory Method
+# Singleton
 
 ## Explanation
 
@@ -11,3 +11,5 @@ The Singleton's constructor should be hidden from the client code.
 Calling the get_instance method should be the only way of getting the Singleton object.
 
 ## Relations with Other Patterns
+
+The Singleton object can be mutable. Flyweight objects are immutable.
