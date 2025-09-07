@@ -10,6 +10,8 @@ The method creates an object of the current class and carries overall of the fie
 
 An object that supports cloning is called a prototype.
 
+The Prototype pattern lets you use a set of pre-built objects, configured in various ways, as prototypes.
+
 ## How it works
 
 You create a set of objects, configured in various ways.
@@ -17,4 +19,4 @@ When you need an object like the one you’ve configured, you just clone a proto
 
 ## Relations with Other Patterns
 
-The Singleton object can be mutable. Flyweight objects are immutable.
+Prototype can help when you need to save copies of Commands into history.
